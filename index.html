@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Vectores</h2>
+    <script>
+        const vector1 = []
+        const vector2=["item1","item2","item3"]
+        const vector3= new Array("elemento4","elemento2","elemento1")
+        console.log(vector1);
+        console.log(vector2);
+        console.log(vector3);
+        
+        // Métodos estaticos
+        console.log("Tamaño del vector: "+ vector2.length); 
+        // Agregar elemento al final
+        vector2.push("55");
+        console.log("Agregar al final 55 => "+vector2);
+        // Eliminar el ultimo elemento
+        vector2.pop();
+        console.log("Eliminar ultimo elemento => " + vector2);
+        // Agregar al inicio
+        vector2.unshift("item1");
+        console.log("Agregar primer elemento => "+ vector2);
+        // Eliminar primero 
+        vector2.shift()
+        console.log("Elimina primer elemento => "+ vector2);
+        // Ordenar vector
+        vector3.sort();
+        console.log("Ordenar => "+ vector3);
+        
+
+        // OBJETOS
+        console.log("--------------------------------------"); 
+        const mascota = {
+            nombe:"thor",
+            eda:2,
+            tipo:"perro",
+            razas:["Peludo", "grande"]
+        }
+
+        console.log("Nombre mascota "+ mascota.nombe);
+        // estructurar
+        const {nombre, edad, tipo} = mascota;
+        console.log("Nombre: "+ nombre, " edad "+ edad + " tipo "+ tipo);
+
+        // funciones retorna otra funcion
+        function msj(){
+            return function(){
+                return "buenas tardes..."
+            }
+        }
+        // funcion con parametros 
+        function suma (x,y){
+            return x+y;
+        }
+        // funcion flecha
+        const suma2 = ()=>{console.log(5+3);}
+
+        //template string 
+        const sumarf2=(n1,n2)=>(`La suma de ${n1} + ${n2} es: ${n1+n2}`)
+
+        console.log(sumarf2(20,10));
+
+    </script>
+</body>
+</html>
