@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="formulario.js"></script>
+    <title>Registro de usuarios</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card border-dark shadow-lg mt-3">
+            <div class="card-header text-center">Registo</div>
+            <div class="card-body">
+                <div class="row" >
+                    <div class="col-5 text-end">
+                        <img style="max-width: 15rem;"  style="border-radius: 50%;" class="img-fluid"
+                        src="login-icons-user-flat-icon-115534363917nmr24mjcm.png">
+                    </div>
+                    <div class="col-5">
+                        <input type="text" placeholder="Ingrese nombre" id="nombre" class="form-control m-1" required>
+                        <input type="text" placeholder="Ingrese apellido" id="apellido" class="form-control m-1" required>
+                        <input type="text" placeholder="Ingrese dirección" id="direccion" class="form-control m-1">
+                        <input type="number" placeholder="Ingrese Cedula" id="cedula" class="form-control m-1">
+                        <input type="email" placeholder="Ingrese correo" id="mail" class="form-control m-1">
+                        <label for="fecha" class="form-label m-1">Ingrese su feche de nacimiento</label>
+                        <input type="date" placeholder="Ingrese Fecha de nacimiento" id="fecha" class="form-control m-1">
+                        <input type="text" placeholder="Ingrese Universidad" id="mail" class="form-control m-1">
+                        <input type="text" placeholder="Ingrese Carrera universitaria" id="mail" class="form-control m-1">
+                        <button class="btn btn-outline-dark mt-2" onclick="registrar()"> Registrar </button>
+                        <button class="btn btn-outline-primary float-end mt-2" onclick="listar()" >Listar</button>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="table table-dark table-hover mt-4">
+            <thead>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Dirección</th>
+                <th>Mail</th>
+            </thead>
+            <tbody id="ctabla">
+                <!-- <tr><td>pedro</td><td>Martinez</td><td>calle 5</td></tr> -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
